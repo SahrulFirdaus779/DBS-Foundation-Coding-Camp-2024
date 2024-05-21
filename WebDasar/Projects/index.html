@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Safara's Beauty</title>
+
+    <!-- My Own Styles -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="jumbotron">
+        <img src="img/logo.jpg" alt="logo">
+        <h1>Safara's Beauty</h1>
+        <p>
+          Tempat perawatan kecantikan yang menawarkan berbagai layanan untuk membuat Anda tampil lebih menarik.
+        </p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#profil">About Us</a></li>
+          <li class="dropdown">
+            <a href="#layanan" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+              <a href="#perawatan-rambut">Perawatan Rambut</a>
+              <a href="#perawatan-wajah">Perawatan Wajah</a>
+            </div>
+          </li>
+          <li><a href="#Galery">Galery</a></li>
+          <li><a href="#janji">Make Appointment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Konten artikel -->
+      <div id="content">
+        <article id="profil" class="card">
+          <h2>About Us</h2>
+          <img src="img/profile.jpg" alt="profil salon" class="featured-image" />
+          <p>
+            Safara's Beauty adalah tempat perawatan kecantikan yang menawarkan berbagai layanan mulai dari perawatan rambut hingga spa. Kami memiliki tenaga ahli yang profesional dan fasilitas modern untuk memastikan kepuasan Anda.
+          </p>
+
+          <p>
+            Visi kami adalah menjadi salon kecantikan terkemuka yang memberikan pelayanan terbaik dengan mengutamakan kualitas dan kepuasan pelanggan. Misi kami adalah memberikan perawatan yang efektif dan inovatif dengan standar tinggi.
+          </p>
+        </article>
+        <article id="layanan" class="card">
+          <h2>Services</h2>
+          <img src="img/layanan.jpg" alt="layanan salon" class="featured-image" />
+          <p>
+            Kami menyediakan berbagai layanan kecantikan, termasuk potong rambut, pewarnaan rambut, perawatan wajah, dan layanan spa. Setiap layanan kami dirancang untuk memberikan hasil terbaik bagi setiap pelanggan.
+          </p>
+          <p>
+            Pelayanan kami mencakup konsultasi kecantikan, perawatan personal, serta paket perawatan khusus yang disesuaikan dengan kebutuhan Anda.
+          </p>
+          </article>
+          <div class="grid-container">
+            <article id="perawatan-rambut" class="grid-item">
+              <h2>Perawatan Rambut</h2>
+              <img src="img/potong-rambut.jpg" alt="perawatan rambut" class="featured-image" />
+              <p>
+                Kami menawarkan berbagai perawatan rambut yang dapat membuat rambut Anda lebih sehat, berkilau, dan cantik. Berikut adalah beberapa layanan perawatan rambut yang kami sediakan:
+              </p>
+              <ul>
+                <li>Hair Cut</li>
+                <li>Hair Color</li>
+                <li>Kerastase Ritual</li>
+                <li>Permanent Blow Dry</li>
+                <li>Wash & Blow</li>
+                <li>Smoothing</li>
+              </ul>
+            </article>
+            <article id="perawatan-wajah" class="grid-item">
+              <h2>Perawatan Wajah</h2>
+              <img src="img/perawatan.jpg" alt="perawatan wajah" class="featured-image" />
+              <p>
+                Wajah adalah salah satu aset terbesar Anda, dan kami siap membantu Anda merawatnya dengan baik. Berikut adalah beberapa layanan perawatan wajah yang kami tawarkan:
+              </p>
+              <ul>
+                <li>Facial Treatment</li>
+                <li>Mikrodermabrasi</li>
+                <li>Peeling</li>
+              </ul>
+            </article>
+          </div>
+          <article id="janji" class="card">
+            <!-- 
+              ~ Ketika pengguna mengisi dan mengirim formulir janji, JavaScript akan mengirim data tersebut secara asinkron menggunakan teknik AJAX.
+              ~ Jika permintaan berhasil, pengguna akan melihat pesan konfirmasi bahwa permintaan mereka telah terkirim.
+              ~ Jika terjadi kesalahan saat pengiriman formulir, pengguna akan diberi pesan kesalahan.
+             -->
+            <div class="appointment-form">
+              <h2>Make Appointment</h2>
+              <form id="appointment-form" action="" method="POST">
+                  <label for="name">Nama:</label>
+                  <input type="text" id="name" name="name" required>
+      
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+      
+                  <label for="date">Tanggal:</label>
+                  <input type="date" id="date" name="date" required>
+      
+                  <label for="time">Waktu:</label>
+                  <input type="time" id="time" name="time" required>
+      
+                  <label for="reason">Alasan:</label>
+                  <textarea id="reason" name="reason" rows="4" required></textarea>
+      
+                  <button type="submit">Submit</button>
+              </form>
+          </div>
+          </article>
+          <article>
+          <div id="Galery" >
+            <h2>Gallery</h2>
+          </div>
+            <div class="gallery">
+              <div class="gallery-item">
+                <img src="img/gambar1.jpg" alt="Image 1">
+              </div>
+              <div class="gallery-item">
+                <img src="img/gambar 2.jpg" alt="Image 2">
+              </div>
+              <div class="gallery-item">
+                <img src="img/gambar 3.jpg" alt="Image 3">
+              </div>
+              <div class="gallery-item">
+                <img src="img/gambar4.jpg" alt="Image 4">
+              </div>
+              <div class="gallery-item">
+                <img src="img/gambar5.jpg" alt="Image 5">
+              </div>
+          </div>
+        </article>
+      </div>        
+      </div>
+      <!-- Konten samping -->
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Safara's Beauty</h2>
+            <p>Kecantikan Anda, Prioritas Kami</p>
+            <figure>
+              <img src="img/logo.jpg" />
+            </figure>
+          </header>
+
+          <section>
+            <h3>Informasi Lainnya</h3>
+
+            <table>
+              <tr>
+                <th>Alamat</th>
+                <td>teazzi, Pondok Indah Mall Phase 3, Office Tower 5, Pd. Pinang, Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12310</td>
+              </tr>
+              <tr>
+                <th>Telepon</th>
+                <td>+62 123 4567</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>info@safarasbeauty.com</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+        <article id="jadwal" class="card">
+          <h2>Jadwal</h2>
+          <img src="img/jadwal.jpg" alt="jadwal salon" class="featured-image" />
+          <p>
+            Berikut adalah jadwal layanan yang tersedia di Safara's Beauty:
+          </p>
+          <ul>
+            <li>Senin - Jumat: 09:00 - 19:00</li>
+            <li>Sabtu: 09:00 - 17:00</li>
+            <li>Minggu: Libur</li>
+          </ul>
+        </article>
+        <article id="testimoni" class="card">
+          <h2>Testimoni Pelanggan</h2>
+          <img src="img/testimoni.jpg" alt="testimoni pelanggan" class="featured-image" />
+          <p>
+            "Pelayanan di Safara's Beauty sangat memuaskan! Stafnya ramah dan profesional. Saya merasa sangat puas dengan hasil perawatan di sini." - Ratna S.
+          </p>
+          <img src="img/testimoni2.jpg" alt="testimoni pelanggan" class="featured-image" />
+          <p>
+            "Salon ini benar-benar memberikan pengalaman perawatan yang luar biasa. Sangat direkomendasikan untuk siapa saja yang ingin merawat kecantikan dengan layanan terbaik." - Sari P.
+          </p>
+        </article>
+        <article id="promo" class="card">
+          <h2>Promo Spesial</h2>
+          <img src="img/promo.jpg" alt="promo spesial" class="featured-image" />
+          <p>
+            Dapatkan diskon 30% untuk semua layanan perawatan rambut selama bulan ini! Jangan lewatkan kesempatan ini untuk merasakan perawatan terbaik dari Safara's Beauty.
+          </p>
+          <p>
+            Selain itu, kami juga menawarkan paket bundling perawatan wajah dan rambut dengan harga spesial. Segera kunjungi kami dan nikmati penawaran menarik ini.
+          </p>
+        </article>
+        <!-- Ketika pengguna mengklik tombol "Kembali ke Atas" di bagian sidebar, JavaScript akan menjalankan fungsi untuk menggulir halaman kembali ke bagian atas -->
+          <button id="back-to-top">Kembali ke Atas</button>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="contact-info">
+            <h2>Informasi Kontak</h2>
+            <p>Untuk informasi lebih lanjut, hubungi kami:</p>
+            <p>010-070-0170</p>
+            <p>info@safarasbeauty.com</p>
+        </div>
+        <div class="location-map">
+            <h2>Lokasi Kami</h2>
+            <!-- Tempatkan peta di sini -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.648576455054!2d106.80718481476993!3d-6.229614695484173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f65f988da77d%3A0x940ea9aaf3204cf5!2sSafara&#39;s%20Beauty!5e0!3m2!1sen!2sid!4v1647608894580!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>      
+        <div class="opening-hours">
+            <h2>Jam Operasional</h2>
+            <p>Senin - Jumat: 09:00 - 19:00</p>
+            <p>Sabtu: 09:00 - 17:00</p>
+            <p>Minggu: Tutup</p>
+            <h2>Ikuti Kami</h2>
+            <ul >
+                <li><a href="https://www.linkedin.com/in/sahrul-firdaus-a25017287"><img src="img/logo-tiktok.jpg" alt="Tiktok"></a></li>
+                <li><a href="https://www.linkedin.com/in/sahrul-firdaus-a25017287"><img src="img/logo-whatsApp.jpg" alt="WhatsApp"></a></li>
+                <li><a href="https://www.linkedin.com/in/sahrul-firdaus-a25017287"><img src="img/logo-instagram.jpg" alt="Instagram"></a></li>
+                <li><a href="https://www.linkedin.com/in/sahrul-firdaus-a25017287"><img src="img/logo-linkedin.jpg" alt="linkedin"></a></li>
+              </ul>
+        </div>
+      </div>
+      <div class="safara">
+        <p>Safara's Beauty &#169; 2024 | Dibuat oleh: <a href="https://www.linkedin.com/in/sahrul-firdaus-a25017287">Sahrul Firdaus</a></p>
+      </div>
+  </footer>
+    <script>
+            // JavaScript for back to top button
+      const backToTopButton = document.querySelector('aside #back-to-top');
+
+      backToTopButton.addEventListener('click', () => {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      });
+  </script>
+  <script>
+    document.getElementById("appointment-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Mencegah pengiriman formulir
+
+  // Mengirimkan data formulir ke server
+  var formData = new FormData(this);
+  fetch(this.action, {
+    method: this.method,
+    body: formData
+  })
+  .then(function(response) {
+    // Menampilkan pesan konfirmasi
+    if (response.ok) {
+      document.getElementById("appointment-form").reset(); // Mengosongkan formulir
+      alert("Permintaan Anda sudah terkirim, dan akan dijawab paling lambat 3 hari.");
+    } else {
+      alert("Terjadi kesalahan. Mohon coba lagi.");
+    }
+  })
+  .catch(function(error) {
+    console.error('Error:', error);
+    alert("Terjadi kesalahan. Mohon coba lagi.");
+  });
+});
+  </script>
+  </body>
+  
+</html>
